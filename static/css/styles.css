@@ -1,0 +1,272 @@
+@font-face {
+    font-family: my font;
+    src:url(../../Gilroy-Light.ttf) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 120%;
+    width: 100%;
+    font-family: my font;
+}
+#main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image:url(jj.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.img1{
+    position: absolute;
+    z-index: 3;
+}
+.img1 img{
+    height: 700px;
+    padding-left: 1050px;
+
+}
+.img2{
+    position: absolute;
+    z-index: 3;
+}
+.img2 img{
+    padding-top: 500px;
+    position: absolute;
+    height: 700px;
+}
+.text{
+    height: 500px;
+    width: 100%;
+}
+.text h1{
+    padding-top: 60px;
+    padding-left: 50px;
+    font-size: 140px;
+    text-align: center;
+    
+}
+.box{
+    margin-top: 10px;
+    padding-right: 20px;
+    height: 50px;
+    width: 13%;
+    padding: 10px;
+    margin-left: 1275px;
+    border-radius: 20px;
+    border: hidden;
+}
+.box:hover{
+    background-color: black;
+    color: white;
+}
+.para p{
+    padding-top: 100px;
+    font-size: 25px;
+    width: 85%;
+    text-align: center;
+    padding-left: 200px;
+    font-weight: 1000;
+}
+.head{
+    margin-top: 500px;
+}
+.head h1{
+    height: 100px;
+    width: 100%;
+    font-weight: 1000;
+    font-size: 80px;
+    padding-left: 600px;
+}
+/* Style for centering the authentication section */
+#auth-section {
+    margin-left: 500px;
+    text-align: center;
+    backdrop-filter: blur(30px);
+    padding: 20px 30px;
+    border-radius: 10px;
+
+    width: 100%;
+    max-width: 600px;
+}
+#auth-section:hover{
+    box-shadow: 10px 14px 18px rgba(0, 0, 0);
+    transition: 0.5s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#signupButton {
+    background: none;
+    border: none;
+    color: #007BFF;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+
+#signupButton:hover {
+    color: #0056b3;
+}
+/* CSS for dimming effect */
+#main.dimmed {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+/* Overlay chat-container styles */
+
+#Chat-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8; /* Place it above the dimmed background */
+    background: linear-gradient(45deg , #ff9a9e,#f7beae,#f4aadf,#a18cd1);
+    animation: gradsh 1s infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: none;
+    border-radius: 30px;
+}
+
+@keyframes gradsh {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+#Chat-container h1{
+    font-size: 80px;
+}
+
+input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+#session-container{
+    margin-left: 250px;
+    width: 1380px;
+}
+
+button{
+    padding: 10px 15px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button :hover{
+    background: #ff3b2d;
+
+}
+
+.chat-box{
+    font-size: 20px;
+    background-color: white;
+    background-blend-mode: luminosity;
+    height: 400px;
+    width: 900px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-left: 20%;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#joinButton{
+    width: 90px;
+
+}
+
+#joinButton i{
+    font-size: 30px;
+}
+
+#sendButton{
+    width: 90px;
+
+}
+
+#sendButton i{
+    font-size: 20px;
+}
+
+#session-container label{
+    font-size: 25px;
+}
+
+#messageInput{
+    margin-left: 250px;
+    /* font-size: 20px; */
+
+}
+
+
+.input-box{
+    width: 1380px;
+}

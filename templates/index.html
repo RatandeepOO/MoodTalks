@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTalks</title>
+    <link rel="stylesheet" href="static\css\styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+
+<body>
+    <div id="main">
+        <div class="img1"><img src="static\css\images\sticker.png" alt=""></div>
+        <div class="img2"><img src="static\css\images\Untitled_design__1_-removebg-preview.png" alt=""></div>
+        <div class="text">
+            <h1>Welcome<br> In<br> MoodTalk</h1>
+        </div>
+        <div class="para">
+            <p>Hello and welcome to our online chatting space, where conversations come alive! Whether you're here to
+                connect with friends, meet new people, or dive into interesting topics, you've found the perfect place.
+            </p>
+            <h1>
+                <pre>
+            </pre>
+            </h1>
+        </div>
+        <div id="auth-section">
+            <h1>Login Here</h1>
+            <div id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button id="loginButton">Login</button>
+                <p>Don't have an account? <button id="signupButton">Signup</button></p>
+            </div>
+            <div id="signup-form" style="display: none;">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" placeholder="Choose a username" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" placeholder="Choose a password" required>
+                <button id="signupConfirmButton">Create Account</button>
+                <p>Already have an account? <button id="backToLoginButton">Back to Login</button></p>
+            </div>
+        </div>
+            <div id="Chat-container">
+                <h1 style="text-align: center;">Chat Room</h1>
+                <div id="session-container">
+                    <label for="sessionKey">Enter Session Key: </label>
+                    <input type="text" id="sessionKey" placeholder="Session Key" required>
+                    <button id="joinButton"><i class="ri-chat-1-line"></i></button>
+                </div>
+                <div class="chat-box" id="chatBox" style="font-size: 59px; line-height: 1.2; overflow-y: auto; word-wrap: break-word; padding: 10px;"></div>
+                <div class="input-box">
+                    <input type="text" id="messageInput" placeholder="Type your message..." disabled>
+                    <button id="sendButton" disabled><i class="ri-send-plane-fill"></i></button>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <script src="static/js/script.js"></script>
+
+</body>
+
+</html>
